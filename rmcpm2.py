@@ -4,7 +4,7 @@ import urllib.parse
 
 BASE_URL: str = "https://rmcpm2.squareweb.app/api"
 
-class CPMRm:
+class RMCPM2:
 
     def __init__(self, access_key) -> None:
         self.auth_token = None

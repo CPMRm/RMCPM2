@@ -22,7 +22,7 @@ from rich.progress import track
 from pyfiglet import Figlet
 from random import randint
 import secrets
-from RMCPM2 import CPMRm  # Your game logic class
+from rmcpm2 import RMCPM2  # Your game logic class
 
 __CHANNEL_USERNAME__ = "⚡𝗥𝗠𝗦𝗧𝗨𝗗𝗜𝗢⚡ 𝐂𝐏𝐌𝟐 𝐓𝐨𝐨𝐥 𝐌𝐚𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥"
 __GROUP_USERNAME__   = "⚡𝗥𝗠𝗦𝗧𝗨𝗗𝗜𝗢⚡𝗖𝗣𝗠𝟮 聊天室"

@@ -207,7 +207,7 @@ if __name__ == "__main__":
         acc_access_key = prompt_valid_value("[bold][?] Access Key[/bold]", "Access Key", password=False)
 
         loading_spinner(console, "🔐 Attempting Login")
-        cpm = CPMRm(acc_access_key)
+        cpm = RMCPM2(acc_access_key)
         login_response = cpm.login(acc_email, acc_password)
 
         if login_response != 0:

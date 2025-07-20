@@ -2,7 +2,7 @@ import requests
 from time import sleep
 import urllib.parse
 
-BASE_URL: str = "https://changrydergen2.squareweb.app/api"
+BASE_URL: str = "https://rmcpm2.squareweb.app/api"
 
 class CPMRm:
 

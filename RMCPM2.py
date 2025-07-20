@@ -22,7 +22,7 @@ from rich.progress import track
 from pyfiglet import Figlet
 from random import randint
 import secrets
-from ryderchang import rmstudiocpm2  # Your game logic class
+from RMCPM2 import CPMRm  # Your game logic class
 
 __CHANNEL_USERNAME__ = "⚡𝗥𝗠𝗦𝗧𝗨𝗗𝗜𝗢⚡ 𝐂𝐏𝐌𝟐 𝐓𝐨𝐨𝐥 𝐌𝐚𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥"
 __GROUP_USERNAME__   = "⚡𝗥𝗠𝗦𝗧𝗨𝗗𝗜𝗢⚡𝗖𝗣𝗠𝟮 聊天室"
@@ -59,7 +59,7 @@ def gradient_text(text, colors):
 def banner(console):
     os.system('cls' if os.name == 'nt' else 'clear')
 
-    brand_name = "RMCPM2"
+    brand_name = "RMCPM2 Tool"
     padding = 6
     box_width = len(brand_name) + padding
     box_top = "╭" + "─" * box_width + "╮"
@@ -207,7 +207,7 @@ if __name__ == "__main__":
         acc_access_key = prompt_valid_value("[bold][?] Access Key[/bold]", "Access Key", password=False)
 
         loading_spinner(console, "🔐 Attempting Login")
-        cpm = rmstudiocpm2(acc_access_key)
+        cpm = CPMRm(acc_access_key)
         login_response = cpm.login(acc_email, acc_password)
 
         if login_response != 0:
